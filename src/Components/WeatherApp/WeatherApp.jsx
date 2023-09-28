@@ -78,9 +78,10 @@ export const WeatherApp = () => {
     <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', width: '100%'}} className='main-container'>
 
       <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="" id='background-image' />
-    <div className='container'>
+    <div className='container' >
       <div className="top-bar">
         <input 
+          id='search-bar'
           type="text" 
           className="cityInput" 
           placeholder='Search'
@@ -90,7 +91,7 @@ export const WeatherApp = () => {
           className="searchIcon" 
           onClick={() => {search()}}
         >
-          <img src={search_icons} alt="" />
+          <img src={search_icons} alt="" id='search-icon'/>
         </div>
       </div>
       <div className="weather-image">
